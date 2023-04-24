@@ -1,0 +1,375 @@
+:root{
+    --primaryColor: #ff274b;
+    --secondColor: #F9D949;
+    --backColor: #F0F0F0;
+    --padding: 8%;
+    --gren:#22A39F;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px; 
+    color: #F0F0F0;          
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondColor);
+}
+span{
+    color: #ff274b;
+}
+h2{
+    font-size: 2.2rem;
+    letter: spacing 0.12rem; 
+    cursor: pointer;
+}
+nav{
+    
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+
+}
+
+nav ul li a{
+    color: var(--primaryColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+     color: aquamarine; 
+     background-color: #ff274b;
+     border-radius: 24px;
+     font-weight: bold;
+              
+}
+
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--backColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--gren);
+    color: #009FBD;
+}
+.content{
+    margin-top: 8rem;
+    flex-grow: 1;
+    padding: 0 var(--padding); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-texts{
+
+    position: relative;
+    bottom: 70px;
+}
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    margin-top: 01.25rem;
+}
+.social{
+    margin-top: 3.5rem;
+}
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.container-images{
+    
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+    top: 60px;
+    left: 100px;
+
+}
+.container-images img{
+    position: absolute;
+    bottom: 0;
+}
+.drop li{
+    display: none;
+}
+.drop:hover{
+    display: block;
+}
+
+/*..............................*/
+
+#menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+#menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transform-origin: 0.4s;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 575px){
+    :root{
+        --padding:1.5rem
+    }
+    html{
+        font-size: 13px;
+
+    }
+    .home{
+        width: 100%;
+        height: 80vh;
+        background-color: var(--secondColor);
+    }
+    .home .container-images{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: aliceblue;
+        border-bottom: 1px solid var(--gren);
+        z-index: 100;
+    }
+    nav >a{
+        display: none;
+    }
+    nav ul{
+        display: none;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vw;
+        background: var(--gren);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+        color: black;
+    }
+    .container-texts{
+        bottom: 0em;
+    }
+   
+    .social{
+        margin-top: 70px;
+    }
+    h3{
+        margin-top: 70px;
+    }
+    #menu{
+        display: block;
+    }
+    h2{
+        color: #ff274b;
+    }
+}
+@media screen and (max-width: 1024px){
+    :root{
+        --padding:0
+    }
+}
+
+ /*...............................*/
+ @media screen and (max-width: 768px){
+    :root{
+        --padding:1.5rem
+    }
+    html{
+        font-size: 13px;
+        color: #000;
+
+    }
+    .home{
+        width: 100%;
+        height: 80vh;
+        background-color: var(--secondColor);
+    }
+    .home .container-images{
+        width: 90%;
+        height: 60%;
+        
+        align-self: flex-end;
+        left: 23px;
+    }
+   
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: aliceblue;
+        border-bottom: 1px solid var(--gren);
+        z-index: 100;
+    }
+    nav >a{
+        display: none;
+    }
+    nav ul{
+        display: none;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vw;
+        background: var(--gren);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+        color: black;
+    }
+    .container-texts{
+        bottom: 0em;
+    }
+   
+    .social{
+        margin-top: 70px;
+    }
+    h3{
+        margin-top: 70px;
+    }
+    #menu{
+        display: block;
+    }
+    h2{
+        color: #ff274b;
+    }
+} 
+/*.............912 */
+
+@media screen and (max-width: 912px){
+    :root{
+        --padding:1.5rem
+    }
+    html{
+        font-size: 13px;
+        color: #000;
+
+    }
+    .home{
+        width: 100%;
+        height: 80vh;
+        background-color: var(--secondColor);
+    }
+    .home .container-images{
+        width: 90%;
+        height: 60%;
+        
+        align-self: flex-end;
+        left: 23px;
+    }
+   
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: aliceblue;
+        border-bottom: 1px solid var(--gren);
+        z-index: 100;
+    }
+    nav >a{
+        display: none;
+    }
+    nav ul{
+        display: none;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vw;
+        background: var(--gren);
+    }
+    nav ul.is-active{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+        color: black;
+    }
+    .container-texts{
+        bottom: 0em;
+    }
+   
+    .social{
+        margin-top: 70px;
+    }
+    h3{
+        margin-top: 70px;
+    }
+    #menu{
+        display: block;
+    }
+    h2{
+        color: #ff274b;
+    }
+} 
+
+
