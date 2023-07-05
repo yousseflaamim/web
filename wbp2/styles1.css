@@ -28,6 +28,21 @@
     border: 2px solid red;
     color: #00bd03;
 }
+.btn1{
+    background-color:rgb(202, 54, 9);
+    color: var(--backColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 2px solid rgb(152, 131, 131);
+    color: #067d08;
+}
 
 .recipe-description {
     flex: 1;
@@ -104,6 +119,12 @@
         text-align: center;
     }
 
+     ul {
+        text-align:left;
+    }
+   
+      
+}
      ul {
         text-align:left;
     }
