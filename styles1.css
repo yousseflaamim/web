@@ -125,3 +125,45 @@
    
       
 }
+@media screen and (max-width: 814px) {
+    *{
+        background-color: rgb(174, 0, 255);
+    }
+    h1{
+        color: rgb(255, 205, 205);
+    }
+    .recipe-details {
+        flex-direction: column;
+        
+    }
+
+    .recipe-image img {
+        display: none;
+    }
+    .recipe-images img {
+        display: none;
+    }
+
+    .recipe-description {
+        margin-top: 20px;
+    }
+    .recipe-images {
+        display: none;
+      }
+      h1 {
+        text-align: center;
+    }
+
+     ul {
+        text-align:right;
+    }
+  
+
+}
+
+     ul {
+        text-align:left;
+    }
+   
+      
+}
